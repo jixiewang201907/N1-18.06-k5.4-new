@@ -7,23 +7,23 @@ cd openwrt
 wget -q -cp files/usr/share/v2ray https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geosite.dat
 wget -q -cp files/usr/share/v2ray https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geoip.dat
 # Add luci-theme-opentomcat
-git clone https://github.com/jixiewang201907/luci-theme-opentomcat.git package/luci-theme-opentomcat
+git clone https://github.com/jixiewang201907/luci-theme-opentomcat.git packages/luci-theme-opentomcat
 # Add luci-theme-argon
 #rm -rf package/lean/luci-theme-argon
 #git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/luci-theme-argon
 # Add amlogic
-svn_export "main" "luci-app-amlogic" "package/luci-app-amlogic" "https://github.com/ophub/luci-app-amlogic"
-#git clone https://github.com/ophub/luci-app-amlogic.git package/luci-app-amlogic
+git clone https://github.com/ophub/luci-app-amlogic.git packages/luci-app-amlogic
 # Add luci-app-passwall
-git clone --depth 1 https://github.com/xiaorouji/openwrt-passwall-packages package/openwrt-passwall-packages
-svn_export "main" "luci-app-passwall2" "package/luci-app-passwall2" "https://github.com/xiaorouji/openwrt-passwall2"
-#git clone -b main https://github.com/xiaorouji/openwrt-passwall.git package/luci-app-passwall
-#git clone -b main https://github.com/xiaorouji/openwrt-passwall2.git package/luci-app-passwall2
+git clone --depth 1 https://github.com/xiaorouji/openwrt-passwall-packages packages
+git clone -b main https://github.com/xiaorouji/openwrt-passwall.git packages/luci-app-passwall
+git clone -b main https://github.com/xiaorouji/openwrt-passwall2.git packages/luci-app-passwall2
 # Add luci-app-bypass
-#git clone https://github.com/jixiewang201907/by-pass.git package/by-pass
-svn_export "main" "luci-app-bypass" "package/luci-app-bypass" "https://github.com/kenzok8/small-package"
+git clone https://github.com/jixiewang201907/by-pass.git packages/by-pass
 # Add luci-app-smartdns
 git clone https://github.com/pymumu/openwrt-smartdns.git feeds/packages/net/smartdns
 git clone https://github.com/pymumu/luci-app-smartdns.git feeds/luci/applications/luci-app-smartdns
 # Add luci-app-adguardhome
-git clone https://github.com/rufengsuixing/luci-app-adguardhome.git package/luci-app-adguardhome
+git clone https://github.com/rufengsuixing/luci-app-adguardhome.git packages/luci-app-adguardhome
+
+./scripts/feeds update -a
+./scripts/feeds install -a
