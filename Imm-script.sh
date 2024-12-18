@@ -12,7 +12,7 @@ git clone https://github.com/jixiewang201907/luci-theme-opentomcat.git package/l
 #rm -rf package/lean/luci-theme-argon
 #git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/luci-theme-argon
 # Add amlogic
-git clone https://github.com/ophub/luci-app-amlogic.git package/luci-app-amlogic
+#git clone https://github.com/ophub/luci-app-amlogic.git package/luci-app-amlogic
 # Add luci-app-passwall
 git clone --depth 1 https://github.com/xiaorouji/openwrt-passwall-packages package/openwrt-passwall-packages
 git clone -b main https://github.com/xiaorouji/openwrt-passwall.git package/openwrt-passwall
