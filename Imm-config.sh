@@ -1,6 +1,6 @@
 #!/bin/bash
 cd openwrt
-cat >> .config <<EOF
+#cat >> .config <<EOF
 CONFIG_TARGET_armvirt=y
 CONFIG_TARGET_armvirt_64=y
 CONFIG_TARGET_armvirt_64_Default=y
@@ -116,8 +116,8 @@ CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Kcptun=y
 CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_NaiveProxy=y
 CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Redsocks2=y
 CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_ShadowsocksR_Libev_Server=y
-CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_ShadowsocksR_Libev_Client=y
-CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks_Libev_Client=y
+#CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_ShadowsocksR_Libev_Client=y
+#CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks_Libev_Client=y
 CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks_Libev_Server=y
 CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks_Rust_Client=y
 CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks_Rust_Server=y 
@@ -253,4 +253,4 @@ CONFIG_boost-compile-visibility-hidden=y
 CONFIG_boost-runtime-shared=y
 CONFIG_boost-static-and-shared-libs=y
 CONFIG_boost-variant-release=y
-EOF
+#EOF
