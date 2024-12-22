@@ -3,9 +3,6 @@ cd openwrt
 # wireless
 rm -rf files/etc/config/wireless
 rm -rf files/etc/modules.d/wireless_enable
-# golang newversion
-rm -rf feeds/packages/lang/golang
-git clone https://github.com/sbwml/packages_lang_golang -b 22.x feeds/packages/lang/golang
 # geodata
 wget -q -cp files/usr/share/v2ray https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geosite.dat
 wget -q -cp files/usr/share/v2ray https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geoip.dat
