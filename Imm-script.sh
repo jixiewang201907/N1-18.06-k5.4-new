@@ -12,9 +12,9 @@ wget -q -cp files/usr/share/v2ray https://github.com/Loyalsoldier/v2ray-rules-da
 # add kenzok8
 git clone https://github.com/kenzok8/openwrt-packages.git package/kenzok8
 git clone https://github.com/kenzok8/small.git package/small
-rm-rf package/kenzok8/adguardhome
-rm-rf package/kenzok8/luci-app-adguardhome
-rm-rf package/kenzok8/luci-app-amlogic
+rm -rf package/kenzok8/adguardhome
+rm -rf package/kenzok8/luci-app-adguardhome
+rm -rf package/kenzok8/luci-app-amlogic
 # Add amlogic
 git clone https://github.com/ophub/luci-app-amlogic.git package/luci-app-amlogic
 # Add luci-app-passwall
