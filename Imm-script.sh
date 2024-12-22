@@ -13,7 +13,7 @@ wget -q -cp files/usr/share/v2ray https://github.com/Loyalsoldier/v2ray-rules-da
 git clone https://github.com/jixiewang201907/luci-theme-opentomcat.git package/luci-theme-opentomcat
 git clone https://github.com/jerrykuku/luci-theme-argon.git package/luci-theme-argon
 # Add amlogic
-#git clone https://github.com/ophub/luci-app-amlogic.git package/luci-app-amlogic
+git clone https://github.com/ophub/luci-app-amlogic.git package/luci-app-amlogic
 # Add luci-app-passwall
 #git clone -b main https://github.com/xiaorouji/openwrt-passwall.git package/luci-app-passwall
 #git clone -b main https://github.com/xiaorouji/openwrt-passwall2.git package/luci-app-passwall2
