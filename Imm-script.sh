@@ -9,6 +9,12 @@ wget -q -cp files/usr/share/v2ray https://github.com/Loyalsoldier/v2ray-rules-da
 # Add luci-theme-opentomcat,Add luci-theme-argon
 #git clone https://github.com/jixiewang201907/luci-theme-opentomcat.git package/luci-theme-opentomcat
 #git clone https://github.com/jerrykuku/luci-theme-argon.git package/luci-theme-argon
+# add kenzok8
+git clone https://github.com/kenzok8/openwrt-packages.git package/kenzok8
+git clone https://github.com/kenzok8/small.git package/small
+rm-rf package/kenzok8/adguardhome
+rm-rf package/kenzok8/luci-app-adguardhome
+rm-rf package/kenzok8/luci-app-amlogic
 # Add amlogic
 git clone https://github.com/ophub/luci-app-amlogic.git package/luci-app-amlogic
 # Add luci-app-passwall
@@ -20,7 +26,4 @@ git clone https://github.com/ophub/luci-app-amlogic.git package/luci-app-amlogic
 #git clone https://github.com/pymumu/openwrt-smartdns.git feeds/packages/net/smartdns
 #git clone https://github.com/pymumu/luci-app-smartdns.git feeds/luci/applications/luci-app-smartdns
 # Add luci-app-adguardhome
-#git clone https://github.com/rufengsuixing/luci-app-adguardhome.git package/luci-app-adguardhome
-# add kenzok8
-git clone https://github.com/kenzok8/openwrt-packages.git package/kenzok8
-git clone https://github.com/kenzok8/small.git package/small
+git clone https://github.com/rufengsuixing/luci-app-adguardhome.git package/luci-app-adguardhome
