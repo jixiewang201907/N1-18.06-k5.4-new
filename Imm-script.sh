@@ -9,6 +9,9 @@ wget -q -cp files/usr/share/v2ray https://github.com/Loyalsoldier/v2ray-rules-da
 # Add luci-theme-opentomcat,Add luci-theme-argon
 #git clone https://github.com/jixiewang201907/luci-theme-opentomcat.git package/luci-theme-opentomcat
 #git clone https://github.com/jerrykuku/luci-theme-argon.git package/luci-theme-argon
+# add passwall2
+#echo "src-git passwall_packages https://github.com/xiaorouji/openwrt-passwall-packages.git;main" >> "feeds.conf.default"
+#echo "src-git passwall2 https://github.com/xiaorouji/openwrt-passwall2.git;main" >> "feeds.conf.default"
 # add kenzok8
 git clone https://github.com/kenzok8/openwrt-packages.git package/kenzok8
 git clone https://github.com/kenzok8/small.git package/small
