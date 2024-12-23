@@ -19,7 +19,7 @@ echo "src-git passwall2 https://github.com/xiaorouji/openwrt-passwall2.git;main"
 #rm -rf package/kenzok8/luci-app-adguardhome
 #rm -rf package/kenzok8/luci-app-amlogic
 # Add amlogic
-git clone https://github.com/ophub/luci-app-amlogic.git package/luci-app-amlogic
+#git clone https://github.com/ophub/luci-app-amlogic.git package/luci-app-amlogic
 # Add luci-app-passwall
 #git clone -b main https://github.com/xiaorouji/openwrt-passwall.git package/luci-app-passwall
 #git clone -b main https://github.com/xiaorouji/openwrt-passwall2.git package/luci-app-passwall2
