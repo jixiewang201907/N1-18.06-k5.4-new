@@ -16,6 +16,7 @@ rm -rf feeds/packages/net/{alist,adguardhome,mosdns,xray*,v2ray*,v2ray*,sing*,sm
 rm -rf feeds/packages/utils/v2dat
 rm -rf feeds/packages/lang/golang
 git clone https://github.com/kenzok8/golang feeds/packages/lang/golang
+echo "src-git SSRplus https://github.com/fw876/helloworld.git;master" >> "feeds.conf.default"
 
 # Add luci-theme-opentomcat,Add luci-theme-argon
 #git clone https://github.com/jixiewang201907/luci-theme-opentomcat.git package/luci-theme-opentomcat
