@@ -3,6 +3,7 @@ cd openwrt
 # wireless
 rm -rf files/etc/config/wireless
 rm -rf files/etc/modules.d/wireless_enable
+
 # geodata
 wget -q -cp files/usr/share/v2ray https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geosite.dat
 wget -q -cp files/usr/share/v2ray https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geoip.dat
@@ -40,6 +41,3 @@ git clone https://github.com/kenzok8/golang feeds/packages/lang/golang
 
 # Add luci-app-adguardhome
 #git clone https://github.com/rufengsuixing/luci-app-adguardhome.git package/luci-app-adguardhome
-
-./scripts/feeds update -a
-./scripts/feeds install -a
