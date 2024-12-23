@@ -41,3 +41,6 @@ git clone https://github.com/kenzok8/golang feeds/packages/lang/golang
 
 # Add luci-app-adguardhome
 #git clone https://github.com/rufengsuixing/luci-app-adguardhome.git package/luci-app-adguardhome
+
+./scripts/feeds update -a
+./scripts/feeds install -a
