@@ -11,12 +11,13 @@ wget -q -cp files/usr/share/v2ray https://github.com/Loyalsoldier/v2ray-rules-da
 # add kenzok8
 sed -i '1i src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf.default
 sed -i '2i src-git small https://github.com/kenzok8/small' feeds.conf.default
+echo "src-git SSRplus https://github.com/fw876/helloworld.git;master" >> "feeds.conf.default"
+echo "src-git packages https://github.com/immortalwrt/packages.git;autoupdate/xray-core-24.12.18" >> "feeds.conf.default"
 rm -rf feeds/packages/net/geoview
 rm -rf feeds/packages/net/{alist,adguardhome,mosdns,xray*,v2ray*,v2ray*,sing*,smartdns}
 rm -rf feeds/packages/utils/v2dat
 rm -rf feeds/packages/lang/golang
 git clone https://github.com/kenzok8/golang feeds/packages/lang/golang
-echo "src-git SSRplus https://github.com/fw876/helloworld.git;master" >> "feeds.conf.default"
 
 # Add luci-theme-opentomcat,Add luci-theme-argon
 #git clone https://github.com/jixiewang201907/luci-theme-opentomcat.git package/luci-theme-opentomcat
